@@ -4,6 +4,31 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .banner {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background-color: #bdac47;
+  color: rgb(4, 3, 3);
+  padding: 1PX 20px;
+  font-family: "popins", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  white-space: nowrap;
+  animation: scroll-banner 60s linear infinite;
+  z-index: 1050; /* Ensure it appears above the navbar */
+}
+
+/* Banner Animation */
+@keyframes scroll-banner {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
